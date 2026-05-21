@@ -59,7 +59,7 @@ CREATE TABLE RAWnews (
 -- DIMENSIONAL TABLES--
 -----------------------
 CREATE TABLE DimDate (
-    DateID INT PRIMARY KEY,           -- YYYYMMDD
+    DateID INT IDENTITY(1,1) PRIMARY KEY,
     [Date] DATE NOT NULL,  
     [Year] INT NOT NULL,
     [Month] INT NOT NULL,
