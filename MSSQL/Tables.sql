@@ -55,6 +55,19 @@ CREATE TABLE RAWnews (
     [Content] NVARCHAR(1000)
 );
 
+------------------
+-- Staging TABLE--
+------------------
+
+CREATE TABLE STGnewsCategory (
+    RAWArticleID INT PRIMARY KEY,
+    GeneratedCategory NVARCHAR(300),
+
+    CONSTRAINT FK_STGnewsCategory_RAWnews
+        FOREIGN KEY (RAWArticleID)
+        REFERENCES RAWnews(ArticleID)
+);
+
 -----------------------
 -- DIMENSIONAL TABLES--
 -----------------------
@@ -127,8 +140,8 @@ CREATE TABLE FactNews (
     AuthorID INT NOT NULL,
     CategoryID INT NOT NULL,
 
-    Title NVARCHAR(500) NOT NULL,
-    [Url] NVARCHAR(500) NOT NULL UNIQUE,
+    Title NVARCHAR(1000) NOT NULL,
+    [Url] NVARCHAR(2000) NOT NULL UNIQUE,
 
     CONSTRAINT FK_FactNews_Date
         FOREIGN KEY (DateID) REFERENCES DimDate(DateID),

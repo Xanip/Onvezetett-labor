@@ -1,0 +1,27 @@
+The following categories can be given to an article in the Database:
+Geopolitics
+Military Conflict
+Global Politics
+Economic Sanctions
+International Trade
+Macroeconomics
+Inflation
+Economic Recession
+Financial Crisis
+Stock Market
+Foreign Exchange
+Monetary Policy
+Fiscal Policy
+Government Bonds
+Energy Market
+Commodities
+Corporate Business
+Technology
+Artificial Intelligence
+Science
+Healthcare
+Climate Change
+Law and Order
+Entertainment
+Sports
+Unknown (Other)

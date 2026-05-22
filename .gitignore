@@ -1,1 +1,31 @@
 .vs/
+
+# =========================
+# PYTHON FÁJLOK
+# =========================
+# A virtuális környezet (a képen látható mappa)
+Python/venv/
+
+# Python által futás közben generált cache fájlok
+__pycache__/
+*.pyc
+*.pyo
+
+# =========================
+# SSIS / VISUAL STUDIO FÁJLOK
+# =========================
+# Visual Studio rejtett mappa (felhasználói beállítások)
+.vs/
+
+# Kódolás/fejlesztés közben generált átmeneti mappák
+Exchange-rates_News_SSISproject/bin/
+Exchange-rates_News_SSISproject/obj/
+
+# Felhasználó-specifikus SSIS beállítások
+*.user
+
+# =========================
+# EGYÉB
+# =========================
+# Opcionális: Ha később jelszavakat/API kulcsokat mentesz ki
+.env
