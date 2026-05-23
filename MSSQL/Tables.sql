@@ -156,3 +156,16 @@ CREATE TABLE FactNews (
         FOREIGN KEY (CategoryID) REFERENCES DimCategory(CategoryID)
 );
 GO
+
+---------
+--VIEWS--
+---------
+CREATE VIEW dbo.vw_DimBaseCurrency AS
+SELECT CurrencyID AS BaseCurrencyID, CurrencyCode, CurrencyName, CurrencySymbol
+FROM dbo.DimCurrency;
+GO
+
+CREATE VIEW dbo.vw_DimTargetCurrency AS
+SELECT CurrencyID AS TargetCurrencyID, CurrencyCode, CurrencyName, CurrencySymbol
+FROM dbo.DimCurrency;
+GO
