@@ -11,8 +11,8 @@
   DTS:LocaleID="1038"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="182"
-  DTS:VersionGUID="{80504B79-982A-42A8-A306-846A031D5141}">
+  DTS:VersionBuild="188"
+  DTS:VersionGUID="{A161D22F-6D7F-458E-BAB3-50673831F976}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -3464,7 +3464,7 @@ where [refTable].[CurrencyCode] = ?</property>
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                      name="ParameterMap">#{Package\FACT_Tables_Upload\FACTexchanges\262:invalid};</property>
+                      name="ParameterMap">#{Package\FACT_Tables_Upload\FACTexchanges\256:invalid};</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -3624,7 +3624,7 @@ where [refTable].[CurrencyCode] = ?</property>
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                      name="ParameterMap">#{Package\FACT_Tables_Upload\FACTexchanges\263:invalid};</property>
+                      name="ParameterMap">#{Package\FACT_Tables_Upload\FACTexchanges\257:invalid};</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -6041,6 +6041,7 @@ WHERE r.ProcessedFlag = 0</property>
       DTS:refId="Package\RAW_Tables_Upload"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
+      DTS:Disabled="True"
       DTS:DTSID="{BBA70B91-03AA-4DA9-9F14-A592679037F8}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
@@ -11456,7 +11457,6 @@ where [refTable].[Url] = ?</property>
       DTS:refId="Package\RAW_Tables_Upload_2_YEAR"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:Disabled="True"
       DTS:DTSID="{3444b700-3519-4b13-8335-ba3520c84159}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
@@ -14914,6 +14914,7 @@ where [refTable].[Currency] = ? and [refTable].[BaseCurrency] = ? and [refTable]
       DTS:refId="Package\SQL - Fill up the DIMdate table"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{C77E301D-0C25-44A8-B8BB-100C22B75E61}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -14931,7 +14932,6 @@ where [refTable].[Currency] = ? and [refTable].[BaseCurrency] = ? and [refTable]
       DTS:refId="Package\STGnewsCategory - Ollama category upload script"
       DTS:CreationName="Microsoft.ExecuteProcess"
       DTS:Description="Runs a python script which collects the available categories from the database and categorizes the ProcessedFlag=0 articles using them and Ollama."
-      DTS:Disabled="True"
       DTS:DTSID="{BC77C2AF-F1A0-4385-AC62-453C70FEE50E}"
       DTS:ExecutableType="Microsoft.ExecuteProcess"
       DTS:LocaleID="-1"
@@ -15060,10 +15060,10 @@ where [refTable].[Currency] = ? and [refTable].[BaseCurrency] = ? and [refTable]
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="310,344"
-          Size="310,387"
+          PanelSize="310,244"
+          Size="310,287"
           Id="Package\DIM_Tables_Upload"
-          TopLeft="388,41" />
+          TopLeft="380,264" />
         <NodeLayout
           Size="214,60"
           Id="Package\FACT_Tables_Upload\Execute SQL Task - Update RAWexchange to ProcessedFlag TRUE"
@@ -15071,7 +15071,7 @@ where [refTable].[Currency] = ? and [refTable].[BaseCurrency] = ? and [refTable]
         <NodeLayout
           Size="191,59"
           Id="Package\FACT_Tables_Upload\Execute SQL Task - Update RAWnews to ProcessedFlag TRUE"
-          TopLeft="56,294" />
+          TopLeft="51,253" />
         <NodeLayout
           Size="173,42"
           Id="Package\FACT_Tables_Upload\FACTexchanges"
@@ -15079,7 +15079,7 @@ where [refTable].[Currency] = ? and [refTable].[BaseCurrency] = ? and [refTable]
         <NodeLayout
           Size="164,42"
           Id="Package\FACT_Tables_Upload\FACTnews"
-          TopLeft="69,212" />
+          TopLeft="69,184" />
         <EdgeLayout
           Id="Package\FACT_Tables_Upload.PrecedenceConstraints[Constraint]"
           TopLeft="142.75,70">
@@ -15104,18 +15104,18 @@ where [refTable].[Currency] = ? and [refTable].[BaseCurrency] = ? and [refTable]
         </EdgeLayout>
         <EdgeLayout
           Id="Package\FACT_Tables_Upload.PrecedenceConstraints[Constraint 1]"
-          TopLeft="151.25,254">
+          TopLeft="148.75,226">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,40"
+              EndConnector="0,27"
               Start="0,0"
-              End="0,32.5">
+              End="0,19.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,32.5" />
+                    End="0,19.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15127,10 +15127,10 @@ where [refTable].[Currency] = ? and [refTable].[BaseCurrency] = ? and [refTable]
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="301,408"
-          Size="301,451"
+          PanelSize="301,345"
+          Size="301,388"
           Id="Package\FACT_Tables_Upload"
-          TopLeft="978,10" />
+          TopLeft="940,215" />
         <NodeLayout
           Size="181,42"
           Id="Package\RAW_Tables_Upload\API_Call_Currencies"
@@ -15193,18 +15193,18 @@ where [refTable].[Currency] = ? and [refTable].[BaseCurrency] = ? and [refTable]
           PanelSize="303,281"
           Size="303,324"
           Id="Package\RAW_Tables_Upload"
-          TopLeft="13,48" />
+          TopLeft="42,109" />
         <NodeLayout
           Size="181,42"
           Id="Package\RAW_Tables_Upload_2_YEAR\API_Call_Currencies_legacy"
-          TopLeft="46.5,184.388888888889" />
+          TopLeft="57.5,90.388888888889" />
         <NodeLayout
           Size="236,42"
           Id="Package\RAW_Tables_Upload_2_YEAR\API_Call_ExchangeRates_2024"
-          TopLeft="17.5,115.388888888889" />
+          TopLeft="28.5,21.388888888889" />
         <EdgeLayout
           Id="Package\RAW_Tables_Upload_2_YEAR.PrecedenceConstraints[Constraint]"
-          TopLeft="136.25,157.388888888889">
+          TopLeft="147.25,63.388888888889">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -15227,40 +15227,44 @@ where [refTable].[Currency] = ? and [refTable].[BaseCurrency] = ? and [refTable]
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="303,281"
-          Size="303,324"
+          PanelSize="303,187"
+          Size="303,230"
           Id="Package\RAW_Tables_Upload_2_YEAR"
-          TopLeft="393.142857142857,459.75" />
+          TopLeft="40.142857142857,450.75" />
         <NodeLayout
-          Size="188,71"
+          Size="170,42"
+          Id="Package\SQL - Fill up the DIMdate table"
+          TopLeft="92.8888888888889,35.2222222222219" />
+        <NodeLayout
+          Size="185,71"
           Id="Package\STGnewsCategory - Ollama category upload script"
-          TopLeft="738,174" />
+          TopLeft="723,372" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="316,210">
+          TopLeft="345,271">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="72,24.5"
+              EndConnector="35,90"
               Start="0,0"
-              End="64.5,24.5">
+              End="27.5,90">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="32,0" />
+                    End="16.8835758835759,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="32,0"
-                    Point2="36,0"
-                    Point3="36,4" />
+                    Point1="16.8835758835759,0"
+                    Point2="20.8835758835759,0"
+                    Point3="20.8835758835759,4" />
                   <mssgle:LineSegment
-                    End="36,20.5" />
+                    End="20.8835758835759,86" />
                   <mssgle:CubicBezierSegment
-                    Point1="36,20.5"
-                    Point2="36,24.5"
-                    Point3="40,24.5" />
+                    Point1="20.8835758835759,86"
+                    Point2="20.8835758835759,90"
+                    Point3="24.8835758835759,90" />
                   <mssgle:LineSegment
-                    End="64.5,24.5" />
+                    End="27.5,90" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15271,30 +15275,18 @@ where [refTable].[Currency] = ? and [refTable].[BaseCurrency] = ? and [refTable]
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="698,171.333333333333">
+          TopLeft="690,407.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="40,38.1666666666667"
+              EndConnector="33,0"
               Start="0,0"
-              End="32.5,38.1666666666667">
+              End="25.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="12.09881626351,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="12.09881626351,0"
-                    Point2="16.09881626351,0"
-                    Point3="16.09881626351,4" />
-                  <mssgle:LineSegment
-                    End="16.09881626351,34.1666666666667" />
-                  <mssgle:CubicBezierSegment
-                    Point1="16.09881626351,34.1666666666667"
-                    Point2="16.09881626351,38.1666666666667"
-                    Point3="20.09881626351,38.1666666666667" />
-                  <mssgle:LineSegment
-                    End="32.5,38.1666666666667" />
+                    End="25.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15305,30 +15297,18 @@ where [refTable].[Currency] = ? and [refTable].[BaseCurrency] = ? and [refTable]
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="926,209.5">
+          TopLeft="908,408.25">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="52,26"
+              EndConnector="32,0"
               Start="0,0"
-              End="44.5,26">
+              End="24.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="22,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="22,0"
-                    Point2="26,0"
-                    Point3="26,4" />
-                  <mssgle:LineSegment
-                    End="26,22" />
-                  <mssgle:CubicBezierSegment
-                    Point1="26,22"
-                    Point2="26,26"
-                    Point3="30,26" />
-                  <mssgle:LineSegment
-                    End="44.5,26" />
+                    End="24.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15339,18 +15319,30 @@ where [refTable].[Currency] = ? and [refTable].[BaseCurrency] = ? and [refTable]
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="543.821428571428,459.75">
+          TopLeft="343.142857142857,565.75">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,-31.75"
+              EndConnector="36.857142857143,-111.75"
               Start="0,0"
-              End="0,-24.25">
+              End="29.357142857143,-111.75">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-24.25" />
+                    End="17.9916839916841,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="17.9916839916841,0"
+                    Point2="21.9916839916841,0"
+                    Point3="21.9916839916841,-4" />
+                  <mssgle:LineSegment
+                    End="21.9916839916841,-107.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="21.9916839916841,-107.75"
+                    Point2="21.9916839916841,-111.75"
+                    Point3="25.9916839916841,-111.75" />
+                  <mssgle:LineSegment
+                    End="29.357142857143,-111.75" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15359,24 +15351,20 @@ where [refTable].[Currency] = ? and [refTable].[BaseCurrency] = ? and [refTable]
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="170,42"
-          Id="Package\SQL - Fill up the DIMdate table"
-          TopLeft="78.8888888888889,432.222222222222" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="164.194444444444,432.222222222222">
+          TopLeft="179.194444444444,77.2222222222219">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,-60.2222222222221"
+              EndConnector="0,31.7777777777781"
               Start="0,0"
-              End="0,-52.7222222222221">
+              End="0,24.2777777777781">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-52.7222222222221" />
+                    End="0,24.2777777777781" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15398,9 +15386,9 @@ where [refTable].[Currency] = ? and [refTable].[BaseCurrency] = ? and [refTable]
           Id="Package\DIM_Tables_Upload\DIMcategory\TXT for categories"
           TopLeft="325,52" />
         <NodeLayout
-          Size="301,42"
+          Size="215,42"
           Id="Package\DIM_Tables_Upload\DIMcategory\Lookup - duplicate protection for DIMcategory"
-          TopLeft="259,197" />
+          TopLeft="302,199" />
         <NodeLayout
           Size="158,42"
           Id="Package\DIM_Tables_Upload\DIMcategory\Derived Column"
@@ -15408,7 +15396,7 @@ where [refTable].[Currency] = ? and [refTable].[BaseCurrency] = ? and [refTable]
         <NodeLayout
           Size="177,42"
           Id="Package\DIM_Tables_Upload\DIMcategory\OLE DB Destination"
-          TopLeft="318,284" />
+          TopLeft="318,275" />
         <EdgeLayout
           Id="Package\DIM_Tables_Upload\DIMcategory.Paths[Flat File Source Output]"
           TopLeft="403.5,94">
@@ -15437,14 +15425,14 @@ where [refTable].[Currency] = ? and [refTable].[BaseCurrency] = ? and [refTable]
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,30"
+              EndConnector="0,32"
               Start="0,0"
-              End="0,22.5">
+              End="0,24.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,22.5" />
+                    End="0,24.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15455,25 +15443,25 @@ where [refTable].[Currency] = ? and [refTable].[BaseCurrency] = ? and [refTable]
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DIM_Tables_Upload\DIMcategory.Paths[Lookup No Match Output]"
-          TopLeft="408,239">
+          TopLeft="408,241">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,45"
+              EndConnector="0,34"
               Start="0,0"
-              End="0,37.5">
+              End="0,26.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,37.5" />
+                    End="0,26.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-55.80638671875,12.9453125,111.6127734375,11.609375"
+              BoundingBox="-55.80638671875,7.4453125,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -15526,9 +15514,9 @@ where [refTable].[Currency] = ? and [refTable].[BaseCurrency] = ? and [refTable]
           Id="Package\DIM_Tables_Upload\DIMexchanges\OLE DB Source - RAWexchange"
           TopLeft="468,50" />
         <NodeLayout
-          Size="285,42"
+          Size="188,42"
           Id="Package\DIM_Tables_Upload\DIMexchanges\Lookup - DIMcurrency duplicate protection"
-          TopLeft="145,215" />
+          TopLeft="187,214" />
         <NodeLayout
           Size="177,42"
           Id="Package\DIM_Tables_Upload\DIMexchanges\OLE DB Destination - DIMdate"
@@ -15548,7 +15536,7 @@ where [refTable].[Currency] = ? and [refTable].[BaseCurrency] = ? and [refTable]
         <NodeLayout
           Size="177,52"
           Id="Package\DIM_Tables_Upload\DIMexchanges\OLE DB Destination - DIMcurrency"
-          TopLeft="193,319" />
+          TopLeft="193,295" />
         <NodeLayout
           Size="187,48"
           Id="Package\DIM_Tables_Upload\DIMexchanges\OLE DB Source - RAWCurrency"
@@ -15579,25 +15567,25 @@ where [refTable].[Currency] = ? and [refTable].[BaseCurrency] = ? and [refTable]
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DIM_Tables_Upload\DIMexchanges.Paths[Lookup No Match Output]"
-          TopLeft="284.5,257">
+          TopLeft="281.25,256">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,62"
+              EndConnector="0,39"
               Start="0,0"
-              End="0,54.5">
+              End="0,31.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,54.5" />
+                    End="0,31.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-55.80638671875,21.4453125,111.6127734375,11.609375"
+              BoundingBox="-55.80638671875,9.9453125,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -15669,18 +15657,18 @@ where [refTable].[Currency] = ? and [refTable].[BaseCurrency] = ? and [refTable]
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DIM_Tables_Upload\DIMexchanges.Paths[OLE DB Command Output]"
-          TopLeft="285,180">
+          TopLeft="281.75,180">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,35"
+              EndConnector="0,34"
               Start="0,0"
-              End="0,27.5">
+              End="0,26.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,27.5" />
+                    End="0,26.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15812,7 +15800,7 @@ where [refTable].[Currency] = ? and [refTable].[BaseCurrency] = ? and [refTable]
           Id="Package\DIM_Tables_Upload\DIMnews\Lookup - DIMsource duplicate protection"
           TopLeft="662,259" />
         <NodeLayout
-          Size="168,53"
+          Size="171,42"
           Id="Package\DIM_Tables_Upload\DIMnews\OLE DB Source - RAWnews - Date"
           TopLeft="190,77" />
         <NodeLayout
@@ -15893,18 +15881,18 @@ where [refTable].[Currency] = ? and [refTable].[BaseCurrency] = ? and [refTable]
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DIM_Tables_Upload\DIMnews.Paths[OLE DB Source Output]"
-          TopLeft="273,130">
+          TopLeft="273.75,119">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,29"
+              EndConnector="0,40"
               Start="0,0"
-              End="0,21.5">
+              End="0,32.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.5" />
+                    End="0,32.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -16869,35 +16857,35 @@ where [refTable].[Currency] = ? and [refTable].[BaseCurrency] = ? and [refTable]
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="177,42"
+          Size="183,42"
           Id="Package\RAW_Tables_Upload\API_Call_Currencies\OLE DB Destination"
-          TopLeft="343,396" />
+          TopLeft="343,340" />
         <NodeLayout
-          Size="227,42"
+          Size="169,42"
           Id="Package\RAW_Tables_Upload\API_Call_Currencies\Lookup - duplicate record filter"
-          TopLeft="314,273" />
+          TopLeft="349,266" />
         <NodeLayout
           Size="122,42"
           Id="Package\RAW_Tables_Upload\API_Call_Currencies\API_Call"
-          TopLeft="370,83" />
+          TopLeft="372,126" />
         <NodeLayout
           Size="161,42"
           Id="Package\RAW_Tables_Upload\API_Call_Currencies\Data Conversion"
           TopLeft="352,194" />
         <EdgeLayout
           Id="Package\RAW_Tables_Upload\API_Call_Currencies.Paths[ExchangeOutput]"
-          TopLeft="431.75,125">
+          TopLeft="432.75,168">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,69"
+              EndConnector="0,26"
               Start="0,0"
-              End="0,61.5">
+              End="0,18.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,61.5" />
+                    End="0,18.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -16908,18 +16896,18 @@ where [refTable].[Currency] = ? and [refTable].[BaseCurrency] = ? and [refTable]
         </EdgeLayout>
         <EdgeLayout
           Id="Package\RAW_Tables_Upload\API_Call_Currencies.Paths[Data Conversion Output]"
-          TopLeft="430,236">
+          TopLeft="433,236">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,37"
+              EndConnector="0,30"
               Start="0,0"
-              End="0,29.5">
+              End="0,22.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,29.5" />
+                    End="0,22.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -16930,25 +16918,25 @@ where [refTable].[Currency] = ? and [refTable].[BaseCurrency] = ? and [refTable]
         </EdgeLayout>
         <EdgeLayout
           Id="Package\RAW_Tables_Upload\API_Call_Currencies.Paths[Lookup No Match Output]"
-          TopLeft="429.5,315">
+          TopLeft="434,308">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,81"
+              EndConnector="0,32"
               Start="0,0"
-              End="0,73.5">
+              End="0,24.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,73.5" />
+                    End="0,24.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-55.80638671875,30.9453125,111.6127734375,11.609375"
+              BoundingBox="-55.80638671875,6.4453125,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
