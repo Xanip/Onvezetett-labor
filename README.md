@@ -42,4 +42,6 @@ venv\Scripts\activate
 pip install pyodbc ollama
 ```
 ## Power BI
+[A tényleges eredmény oldalt itt lehet megtakinteni.](https://app.powerbi.com/view?r=eyJrIjoiNzdhMTAxOWUtZGU2Yy00ZTUxLWE5YjQtNmVlOWFhOWJmNjM1IiwidCI6IjZhMzU0OGFiLTc1NzAtNDI3MS05MWE4LTU4ZGEwMDY5NzAyOSIsImMiOjh9)
+
 [A projekt ezen a linken keresztül elérhető, GitHub-ra nem volt ajánlott feltölteni.](https://drive.google.com/drive/folders/1pe7j8BHMNa-w4gTpjp5GziDpMakDlPoD?usp=sharing)
