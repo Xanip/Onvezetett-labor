@@ -11,8 +11,8 @@
   DTS:LocaleID="1038"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="191"
-  DTS:VersionGUID="{73FDE3D4-9C8F-4543-AB09-A50C4537D5D7}">
+  DTS:VersionBuild="192"
+  DTS:VersionGUID="{09B34C3D-3200-4260-89DA-C66C31953EA9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -6041,7 +6041,6 @@ WHERE r.ProcessedFlag = 0</property>
       DTS:refId="Package\RAW_Tables_Upload"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:Disabled="True"
       DTS:DTSID="{BBA70B91-03AA-4DA9-9F14-A592679037F8}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
@@ -11457,6 +11456,7 @@ where [refTable].[Url] = ?</property>
       DTS:refId="Package\RAW_Tables_Upload_2_YEAR"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
+      DTS:Disabled="True"
       DTS:DTSID="{3444b700-3519-4b13-8335-ba3520c84159}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
